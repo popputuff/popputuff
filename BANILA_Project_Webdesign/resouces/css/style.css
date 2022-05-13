@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Mallanna', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden;
+}
+
+.clearfix { zoom: 1; }
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*---------- Section Header ----------*/
+
+header{
+    height: 100vh;
+/*    margin-left: 30px;*/
+}
+
+header nav{
+    padding-bottom: 20px;
+    border-bottom: 2px #aaaaaa solid;
+    text-align: center;
+    background-color: white;
+    
+}
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 2px #eee;
+    z-index: 9999;
+}
+/*.sticky .main-nav:link
+.sticky .main-nav:visited {
+    padding: 8px 0;
+    color: #555; 
+      
+}*/
+
+
+
+.row {
+    max-width: 1140px ;  /* not auto */
+    margin: 0 auto;
+/*    margin-left: 11.5%;*/
+
+}
+
+.row img{
+    padding-right: 50px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.main-nav i{        /*icon at main-nav*/
+    font-size: 27px;
+    padding-left: 30px;
+
+}
+
+
+.main-nav li{       /*link at main-nav*/
+    display: inline;
+    float: left;
+    margin: 50px 20px 20px 20px;
+}
+
+
+.main-nav li :link,
+.main-nav li :visited{       /*link at main-nav*/
+    color: black;
+}
+
+.main-nav li :hover,
+.main-nav li :active{       /*link at main-nav*/
+    color: #f2cbd2;
+    transition: color 0.2s;
+    
+}
+
+.main-nav form{     /*search box at main-nav*/
+    display: inline;
+    float: left;
+    margin: 50px 20px 20px 80px;
+}
+
+.main-nav form i{   /*icon search in from searc main-nav*/
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input{
+    border: none;
+    outline:0;
+    margin-left: 5px;
+}
+
+.search{
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search i{
+    padding-left: 0;
+    margin-left: 0;
+    
+}
+
+
+.presenter {
+    background: url(img/Taeyon_resize_3.PNG);
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment:fixed;
+    background-position:0px 0;
+   
+    
+    ;
+*/
+/*    margin-left: 30px;*/
+}
+
+
+/* ------------------------------------------- */
+section{
+    margin: 20px 0px;
+    padding: 50px 20px;
+    
+}
+
+.mid-page section , .mid-page div {
+    margin-top: 0px;
+}
+
+.mid-page {
+    width:100%;
+    background-color: white;
+    border-bottom: 2px #aaaaaa solid;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* ---- First section (Presenter Right) ----- */
+.First{
+/*    display: inline-block;*/
+    width: 40%;
+    float: left;
+/*    border:1px black solid;*/
+/*    background-color: black;*/
+}
+
+.First img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.presenter1 {
+    margin-top: 1.23%;
+    
+}
+
+
+
+/* ---- Second section (Product) ----- */
+.Second{
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+/*    background-color: black;*/
+/*    border: 1px black solid;*/
+}
+
+
+.second-title {
+    text-align: left;
+    font-weight: 600;
+    font-weight: bold;
+    font-size:250%;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    color: black;
+}
+
+.product-show {
+    overflow: hidden;
+    display: block;
+/*    border-radius: 10px;*/
+    background-color:#feb4c3;
+}
+
+.product-show img {
+/*    opacity: 0.7;*/
+    width: 107%;
+    height: auto;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.product-show img:hover {
+    transform: scale(0.95);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 1;
+}
+
+
+/* ---- Third section ----- */
+.Third{
+    width:50%;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+/*    background-color: black;*/
+/*    border: 1px black solid;*/
+}
+
+.Third h1{
+/*    text-align: center;*/
+    
+}
+
+
+
+/* ---- Forth section / form----- */
+.Forth {
+/*    border: 1px black solid;*/
+/*    background-color: black;*/
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+    margin: 0;
+    width: 100%;
+}
+*/
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+input[type="checkbox"]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+    background-color: #e2e2e2;
+} 
+
+.ion-ios-chatboxes{
+    font-size: 25px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom:40px;
+}
+
+input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+input[type="submit"]:active,
+input[type="submit"]:hover{
+    transition: background-color 0.2s;
+    background-color: #f2cbd2;
+}
+
+/* ----------- FOOTER ---------- */
+
+
+footer{
+    background-color: #333;
+    padding: 50px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-nav{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-nav li:last-child{
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-nav li a:link,
+.social-nav li a:visited{
+    color: #888;
+    border: 0;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+    border: 0;
+}
+
+.social-nav li a:link,
+.social-nav li a:visited{
+    font-size: 160%;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active{
+    color: #f2cbd2;
+}
+
+.ion-social-twitter:hover,
+.ion-social-twitter:active{
+    color: #f2cbd2;
+}
+
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active{
+    color: #f2cbd2;
+}
+
+.ion-social-instagram:hover,
+.ion-social-instagram:active{
+    color: #f2cbd2;
+}
+
+
+
+
+
+
+
+
+
